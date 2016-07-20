@@ -1,8 +1,10 @@
 function MainController($scope) {
-  $scope.name = 'Jason';
-  $scope.email = 'jasonpaulsouthwell@me.com';
-  $scope.phone = '415.961.9350'
+  $scope.contact = {
+    name: 'Jason Southwell',
+    email:'jason@email.com',
+    phone: '415.555.5555' }
 }
+
 angular
-  .module('app')
+  .module('app', [])
   .controller('MainController', MainController);
